@@ -1,0 +1,30 @@
+.useflex{
+    background-color: brown;
+    margin: 2px;
+    margin-bottom: 20px;
+}
+.flexsec{
+    display: flex;
+}
+
+.usegrid{
+
+    display: grid;
+    /* grid-template-columns: 100px 100px  100px  100px 100px ; */
+    grid-template-columns: repeat(5,200px);
+    grid-gap: 20px;
+grid-template-rows: 100px 50px 100px auto 100px;
+
+}
+.box{
+    background-color: rgba(154, 136, 123, 0.568);
+border: 2px solid red;
+padding: 5px;
+}
+
+@media only screen and (max-width:800px) {
+    .usegrid{
+        display: grid;
+        grid-template-columns: repeat(3,150px);
+    }
+}
